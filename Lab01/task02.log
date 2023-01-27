@@ -1,0 +1,64 @@
+Script started on 2023-01-27 10:36:47+05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ tree
+
+Command 'tree' not found, but can be installed with:
+
+sudo snap install tree  # version 1.8.0+pkg-3fd6, or
+sudo apt  install tree  # version 1.8.0-1
+
+See 'snap info tree' for additional versions.
+
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ sudo apt
+[sudo] password for student: 
+apt 2.0.6 (amd64)
+Usage: apt [options] command
+
+apt is a commandline package manager and provides commands for
+searching and managing as well as querying information about packages.
+It provides the same functionality as the specialized APT tools,
+like apt-get and apt-cache, but enables options more suitable for
+interactive use by default.
+
+Most used commands:
+  list - list packages based on package names
+  search - search in package descriptions
+  show - show package details
+  install - install packages
+  reinstall - reinstall packages
+  remove - remove packages
+  autoremove - Remove automatically all unused packages
+  update - update list of available packages
+  upgrade - upgrade the system by installing/upgrading packages
+  full-upgrade - upgrade the system by removing/installing/upgrading packages
+  edit-sources - edit the source information file
+  satisfy - satisfy dependency strings
+
+See apt(8) for more information about the available commands.
+Configuration options and syntax is detailed in apt.conf(5).
+Information about how to configure sources can be found in sources.list(5).
+Package and version choices can be expressed via apt_preferences(5).
+Security details are available in apt-secure(8).
+                                        This APT has Super Cow Powers.
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ sudo apt tree[K[K[K[Kinstall te[Kree
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following NEW packages will be installed:
+  tree
+0 upgraded, 1 newly installed, 0 to remove and 367 not upgraded.
+Need to get 43.0 kB of archives.
+After this operation, 115 kB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 http://pk.archive.ubuntu.com/ubuntu focal/universe amd64 tree amd64 1.8.0-1 [43.0 kB]
+[33m10% [1 tree 5,511 B/43.0 kB 13%][0m[33m                                100% [Working][0m              Fetched 43.0 kB in 1s (73.1 kB/s)
+
+7[0;23r8[1ASelecting previously unselected package tree.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 151260 files and directories currently installed.)
+Preparing to unpack .../tree_1.8.0-1_amd64.deb ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[24;0f[42m[30mProgress: [ 20%][49m[39m [###########...............................................] 8Unpacking tree (1.8.0-1) ...
+7[24;0f[42m[30mProgress: [ 40%][49m[39m [#######################...................................] 8Setting up tree (1.8.0-1) ...
+7[24;0f[42m[30mProgress: [ 60%][49m[39m [##################################........................] 87[24;0f[42m[30mProgress: [ 80%][49m[39m [##############################################............] 8Processing triggers for man-db (2.9.1-1) ...
+
+7[0;24r8[1A[J]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2023-01-27 10:39:23+05:00 [COMMAND_EXIT_CODE="0"]

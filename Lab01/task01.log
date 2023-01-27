@@ -1,0 +1,17 @@
+Script started on 2023-01-27 10:33:27+05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="168" LINES="45"]
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ ls
+[0m[01;34mDesktop[0m   [01;34mDocuments[0m  [40;31;01mlink[0m                  Mubashir.txt  [01;34moslab[0m   [01;34mPictures[0m  screen.log  task01.log  [01;34mVideos[0m
+[01;34mdirOslab[0m  [01;34mDownloads[0m  [01;34mmetasploit-framework[0m  [01;34mMusic[0m         [01;34moslab1[0m  [01;34mPublic[0m    [01;34msnap[0m        [01;34mTemplates[0m
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ mkdir rafay
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ mk[K[Kcd Desktop
+]0;student@student-OptiPlex-7090: ~/Desktop[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~/Desktop[00m$ touch ra[K.txt
+]0;student@student-OptiPlex-7090: ~/Desktop[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~/Desktop[00m$ cd ..
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ rmdir rafay
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ ls
+[0m[01;34mDesktop[0m   [01;34mDocuments[0m  [40;31;01mlink[0m                  Mubashir.txt  [01;34moslab[0m   [01;34mPictures[0m  screen.log  task01.log  [01;34mVideos[0m
+[01;34mdirOslab[0m  [01;34mDownloads[0m  [01;34mmetasploit-framework[0m  [01;34mMusic[0m         [01;34moslab1[0m  [01;34mPublic[0m    [01;34msnap[0m        [01;34mTemplates[0m
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ ^C^C
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2023-01-27 10:35:39+05:00 [COMMAND_EXIT_CODE="130"]
