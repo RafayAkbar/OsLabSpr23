@@ -1,0 +1,42 @@
+Script started on 2023-02-01 08:32:03+0500
+]0;student@hira: ~[01;32mstudent@hira[00m:[01;34m~[00m$ sudo addusr user1[1@e[C[C[C[C[C[C[C
+[sudo] password for student: 
+adduser: The user `user1' already exists.
+]0;student@hira: ~[01;32mstudent@hira[00m:[01;34m~[00m$ sudo adduser rafayuser
+Adding user `rafayuser' ...
+Adding new group `rafayuser' (1009) ...
+Adding new user `rafayuser' (1005) with group `rafayuser' ...
+Creating home directory `/home/rafayuser' ...
+Copying files from `/etc/skel' ...
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+Changing the user information for rafayuser
+Enter the new value, or press ENTER for the default
+	Full Name []: rafay akbar
+	Room Number []: 2
+	Work Phone []: 124141234
+	Home Phone []: 1412322
+	Other []: 2341232
+Is the information correct? [Y/n] y
+]0;student@hira: ~[01;32mstudent@hira[00m:[01;34m~[00m$ sudo adduser amnauser
+Adding user `amnauser' ...
+Adding new group `amnauser' (1010) ...
+Adding new user `amnauser' (1006) with group `amnauser' ...
+Creating home directory `/home/amnauser' ...
+Copying files from `/etc/skel' ...
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+Changing the user information for amnauser
+Enter the new value, or press ENTER for the default
+	Full Name []: amna mudabbir
+	Room Number []: 3
+	Work Phone []: 35346
+	Home Phone []: 2523543
+	Other []: 253253
+Is the information correct? [Y/n] y
+]0;student@hira: ~[01;32mstudent@hira[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2023-02-01 08:36:40+0500
