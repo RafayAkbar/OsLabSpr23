@@ -7,4 +7,7 @@ Task 2:
 ![Screenshot from 2023-02-01 10-24-04](https://user-images.githubusercontent.com/94800480/215958755-a8cf36d5-3608-4767-91d1-6a662f0fd9b9.png)
 ![Screenshot from 2023-02-01 10-24-11](https://user-images.githubusercontent.com/94800480/215958784-cb62e3fd-8745-4c35-ac4f-8c8f2c0b707c.png)
 ![Screenshot from 2023-02-01 10-24-15](https://user-images.githubusercontent.com/94800480/215958820-b4628b25-0ff6-416a-bfa1-1bce31a8ba6c.png)
+Task 3:
+![Screenshot from 2023-02-01 10-38-02](https://user-images.githubusercontent.com/94800480/215964500-0a751ae8-1d41-46ed-9102-ddbb10dd8a6a.png)
+![Screenshot from 2023-02-01 10-38-08](https://user-images.githubusercontent.com/94800480/215964523-7b654a62-1fa0-4370-963c-57890bb06cff.png)
 
