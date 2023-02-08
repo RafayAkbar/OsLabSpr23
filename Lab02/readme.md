@@ -10,3 +10,5 @@ Task 2:
 Task 3:
 ![Screenshot from 2023-02-08 08-53-51](https://user-images.githubusercontent.com/94800480/217431008-b9118da0-8567-4218-a1b0-3a8ce71ac4dc.png)
 ![Screenshot from 2023-02-08 08-54-12](https://user-images.githubusercontent.com/94800480/217431027-522d6a30-094c-4a20-9e8b-0454bfe7c6de.png)
+Task 6:
+![Screenshot from 2023-02-08 09-26-32](https://user-images.githubusercontent.com/94800480/217433700-7976a3c0-f827-416c-8884-79892a73c002.png)
