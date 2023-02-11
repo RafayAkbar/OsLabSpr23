@@ -29,33 +29,37 @@ Commands:
 Installing samba:
 
 Step 1: Install Samba. starting by udating and upgrading.
+![image](https://user-images.githubusercontent.com/94800480/218275355-7e1af86e-5503-433e-9120-b9cc6343331c.png)
+![image](https://user-images.githubusercontent.com/94800480/218275362-23ea161f-3439-4fd3-a527-a140e228bbb9.png)
+![image](https://user-images.githubusercontent.com/94800480/218275364-e5e79f4f-b0df-4592-adad-1df04a77c461.png)
+![image](https://user-images.githubusercontent.com/94800480/218275371-21585886-90ed-469c-b851-c0042b9f480b.png)
+![image](https://user-images.githubusercontent.com/94800480/218275374-e254e669-3675-4ccf-b1b4-59b3e7878470.png)
+![image](https://user-images.githubusercontent.com/94800480/218275382-8f93e89a-a2b5-439d-b0ce-bf4931ae5007.png)
 
-Step 2: Create a Shared Directory.
+
+Step 2: Create a Shared Directory.by using mkdir -p /home/sharing command make shared directory
 
 Step 3: Configure Samba's Global Options. Browsing/Identification. Networking.
+![image](https://user-images.githubusercontent.com/94800480/218275403-83a7ef19-f21b-4961-a97a-48e7a1c57c5e.png)
+![image](https://user-images.githubusercontent.com/94800480/218275406-b1324ee3-a8f8-41bd-accd-597aff2ecb14.png)
+![image](https://user-images.githubusercontent.com/94800480/218275410-6ffd7765-09ea-433a-a793-988ed6833890.png)
+![image](https://user-images.githubusercontent.com/94800480/218275418-de1d80dd-d1ba-4396-8bd2-a1a472d13648.png)
+![image](https://user-images.githubusercontent.com/94800480/218275422-a530f58b-3270-42ee-b088-9767dbf05eab.png)
 
 Step 4: Set Up a User Account.
+![image](https://user-images.githubusercontent.com/94800480/218275429-1942137d-b1d1-4cf3-ad7c-d563c313e869.png)
 
-Step 5: Configure Samba Share Directory Settings.
+Step 5: Configure Samba Share Directory Settings.Access the configuration file once again to add the previously made sharing directory.
+![image](https://user-images.githubusercontent.com/94800480/218275243-3cf40567-2af6-411d-975f-59e1b7be16ff.png)
+
+then exit the file and save changes and yhen return to the testpram output confirms that Samba is adequately configured. For a more verbose output, hit enter:
+![image](https://user-images.githubusercontent.com/94800480/218275440-2d9decf5-7c1c-4335-bbb8-d36ef7e84331.png)
 
 Step 6: Update the Firewall Rules.
 
-Step 7: Connect to the Shared Directory.
+![image](https://user-images.githubusercontent.com/94800480/218275444-51d1441f-c1a3-4a81-82d0-7e3b717661a2.png)
 
-![WhatsApp Image 2023-02-08 at 11 36 34 PM](https://user-images.githubusercontent.com/94800480/217626656-7b0375ce-df0d-4f60-a3eb-01ae992a1add.jpeg)
-![WhatsApp Image 2023-02-08 at 11 42 08 PM](https://user-images.githubusercontent.com/94800480/217626675-3d1262ff-22df-4d56-a84f-0654e8c56626.jpeg)
-![WhatsApp Image 2023-02-08 at 11 38 58 PM](https://user-images.githubusercontent.com/94800480/217626749-66037c2d-93b6-48a8-8529-9442e7e74627.jpeg)
-![WhatsApp Image 2023-02-08 at 11 42 17 PM](https://user-images.githubusercontent.com/94800480/217626757-5dcf720f-bcb3-4f40-a755-e3c908ad8c87.jpeg)
-![Screenshot from 2023-02-08 20-26-48](https://user-images.githubusercontent.com/94800480/217626763-f9fd4f2b-c58c-4c6f-b327-db20ecfb6e78.png)
-![WhatsApp Image 2023-02-08 at 11 36 59 PM](https://user-images.githubusercontent.com/94800480/217626767-c5ed6a85-ab16-47bb-a954-b3580294f606.jpeg)
-![WhatsApp Image 2023-02-08 at 11 40 16 PM](https://user-images.githubusercontent.com/94800480/217626769-77d845b7-fac1-44a5-b50e-66f0ccf046c7.jpeg)
-![WhatsApp Image 2023-02-08 at 11 40 00 PM](https://user-images.githubusercontent.com/94800480/217626773-30038614-6e03-4a5e-84c7-3fb4aa8f4982.jpeg)
-![WhatsApp Image 2023-02-08 at 11 40 36 PM](https://user-images.githubusercontent.com/94800480/217626777-27b8f427-48dc-4cd7-8d52-af962dfeaf61.jpeg)
-![WhatsApp Image 2023-02-08 at 11 36 42 PM](https://user-images.githubusercontent.com/94800480/217626782-948df3cd-8dc6-43cb-8108-29d15219ab99.jpeg)
-![Screenshot from 2023-02-08 23-28-12](https://user-images.githubusercontent.com/94800480/217626784-15ce53b0-b64c-4734-ba13-aca926b654e1.png)
-![Screenshot from 2023-02-08 20-52-14](https://user-images.githubusercontent.com/94800480/217626787-49388346-c961-445d-899f-0b6e955535e2.png)
-![Screenshot from 2023-02-08 20-50-49](https://user-images.githubusercontent.com/94800480/217626789-262b7302-fd5d-494d-8e77-73381c5fcc50.png)
-![Screenshot from 2023-02-08 20-38-41](https://user-images.githubusercontent.com/94800480/217626794-54b96832-7637-47a9-923e-de8c7cd91234.png)
-![Screenshot from 2023-02-08 20-31-19](https://user-images.githubusercontent.com/94800480/217626801-ce2b9268-8c59-4905-a8a1-1e51073c4d01.png)
-![Screenshot from 2023-02-08 20-27-56](https://user-images.githubusercontent.com/94800480/217626804-a985f8d2-1090-4378-9315-371e823a710d.png)
-![WhatsApp Image 2023-02-08 at 11 41 42 PM](https://user-images.githubusercontent.com/94800480/217626808-0ae686d5-56f6-437a-9be5-abe1f5ae5b3c.jpeg)
+Step 7: Connect to the Shared Directory.To connect to the shared directory via GUI, access the default file manager and choose the Other Locations option. Type "smb://ip-address/sharing" into the Enter server address box and select Connect The system asks for a Username and Password. Provide the requested info and click Connect again.
+
+![image](https://user-images.githubusercontent.com/94800480/218275452-006bf96e-44c2-44db-9063-02ce14511ee0.png)
+
