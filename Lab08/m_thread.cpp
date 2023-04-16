@@ -1,97 +1,68 @@
-#include <pthread.h>
-#include <time.h>
+#include <stdio.h>
 #include <stdlib.h>
-#define MAX 15
-#define THREAD_MAX 4
-int a[MAX];
-int part = 0;
+#include <pthread.h>
 
-void merge(int low, int mid, int high)
-{   
-    int* left = (int*) malloc( (mid - low + 1) * sizeof(int));
-    int* right = (int*) malloc( (high - mid) * sizeof(int));
+#define MAX_SIZE 1000
+#define MAX_THREADS 16
 
-    int n1 = mid - low + 1,
-    n2 = high - mid,
-    i, j;
+int data[MAX_SIZE];
+int sorted[MAX_SIZE];
+int thread_count;
+pthread_t threads[MAX_THREADS];
 
-    for (i = 0; i < n1; i++)
-        left[i] = a[i + low];
-
-    for (i = 0; i < n2; i++)
-        right[i] = a[i + mid + 1];
-
-    int k = low;
-    i = j = 0;
-
-    while (i < n1 && j < n2) {
-        if (left[i] <= right[j])
-            a[k++] = left[i++];
-        else
-            a[k++] = right[j++];
+void merge(int start, int mid, int end) {
+    int i, j, k;
+    i = start;
+    j = mid + 1;
+    k = start;
+    while (i <= mid && j <= end) {
+        if (data[i] < data[j]) {
+            sorted[k++] = data[i++];
+        } else {
+            sorted[k++] = data[j++];
+        }
     }
-
-    while (i < n1) {
-        a[k++] = left[i++];
+    while (i <= mid) {
+        sorted[k++] = data[i++];
     }
-    while (j < n2) {
-        a[k++] = right[j++];
+    while (j <= end) {
+        sorted[k++] = data[j++];
     }
-
-    free(left);
-    free(right);
-}
-
-void merge_sort(int low, int high)
-{
-
-    int mid = low + (high - low) / 2;
-    if (low < high) {
-        merge_sort(low, mid);
-        merge_sort(mid + 1, high);
-        merge(low, mid, high);
+    for (i = start; i <= end; i++) {
+        data[i] = sorted[i];
     }
 }
 
-void* merge_sortthread(void* arg)
-{
-    int thread_part = part++:
-    int low = thread_part * (MAX / THREAD_MAX);
-    int high = (thread_part + 1) * (MAX / THREAD_MAX) - 1;
-
-    int mid = low + (high - low) / 2;
-    if (low < high) {
-        merge_sort(low, mid);
-        merge_sort(mid + 1, high);
-        merge(low, mid, high);
+void* merge_sort(void* arg) {
+    int thread_num = *(int*)arg;
+    int start = thread_num * (MAX_SIZE / thread_count);
+    int end = (thread_num + 1) * (MAX_SIZE / thread_count) - 1;
+    int mid = (start + end) / 2;
+    if (start < end) {
+        merge_sort(&thread_num);
+        merge_sort(&thread_num);
+        merge(start, mid, end);
     }
-    return 0;
+    pthread_exit(NULL);
 }
 
-int main()
-{
-    for (int i = 0; i < MAX; i++){
-        a[i] = rand() % 100;
+int main(int argc, char** argv) {
+    int i;
+    thread_count = 16;
+    for (i = 0; i < MAX_SIZE; i++) {
+        data[i] = rand() % MAX_SIZE;
     }
-
-    pthread_t threads[THREAD_MAX];
-
-    for (int i = 0; i < THREAD_MAX; i++)
-        pthread_create(&threads[i], NULL, merge_sort123,
-                       (void*)NULL);
-
-    for (int i = 0; i < THREAD_MAX; i++)
+    for (i = 0; i < thread_count; i++) {
+        pthread_create(&threads[i], NULL, merge_sort, &i);
+    }
+    for (i = 0; i < thread_count; i++) {
         pthread_join(threads[i], NULL);
-
-    merge(0, (MAX / 2 - 1) / 2, MAX / 2 - 1);
-    merge(MAX / 2, MAX/2 + (MAX-1-MAX/2)/2, MAX - 1);
-    merge(0, (MAX - 1)/2, MAX - 1);
-
-    printf("\n\nSorted array: ");
-    for (int i = 0; i < MAX; i++)
-        printf ("%d ", a[i]);
-
-
+    }
+    merge(0, (MAX_SIZE - 1) / 2, MAX_SIZE - 1);
+    for (i = 0; i < MAX_SIZE; i++) {
+        printf("%d ", data[i]);
+    }
     printf("\n");
     return 0;
 }
+
